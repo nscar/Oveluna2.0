@@ -3,7 +3,8 @@
   margin: auto;
   overflow: hidden;
   /* padding: 5rem 0rem; */
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   text-align: center;
 }
 
@@ -48,6 +49,7 @@ section a, p, h3{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    
   }
 
   footer p {

@@ -6,7 +6,7 @@ class Footer extends React.Component{
 
     render(){
         return(
-<section class="services center gradient">
+<section class="center-foot gradient">
         <h3>Ingresa a nuestras redes sociales:</h3>
         <div class="contain grid-3">
             <div>

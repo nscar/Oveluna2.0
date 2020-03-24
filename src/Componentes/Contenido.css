@@ -17,6 +17,11 @@
   text-align: center;
 }
 
+.center-foot{
+  text-align: center;
+  padding-top: 1rem;
+}
+
 .expand-center {
   margin: auto;
   width: 100%;
