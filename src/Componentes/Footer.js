@@ -1,11 +1,12 @@
 import React from 'react';
-import { Row } from 'reactstrap';
+import "./Footer.css";
+// import { Row } from 'reactstrap';
 
 class Footer extends React.Component{
 
     render(){
         return(
-<section class="services text-center">
+<section class="services center gradient">
         <h3>Ingresa a nuestras redes sociales:</h3>
         <div class="contain grid-3">
             <div>

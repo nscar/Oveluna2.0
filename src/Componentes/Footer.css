@@ -1,0 +1,58 @@
+.contain {
+  max-width: 860px;
+  margin: auto;
+  overflow: hidden;
+  /* padding: 5rem 0rem; */
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+footer {
+  padding: 2.2rem;
+}
+
+.gradient {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section a, p, h3{
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+
+  }
+
+  section a:hover{
+    color: slateblue;
+    text-decoration: none;
+  }
+
+  section h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  footer p {
+    margin: 0;
+    color:  #2f3541;
+  }
+
+  
