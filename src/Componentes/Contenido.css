@@ -1,13 +1,18 @@
-.grid-3 {
+.grilla-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* 30px 30px 30px or repeat(3, 1fr)*/
-  grid-gap: 0px;
+  grid-gap: 0px; 
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.container-img img {
-  display: inline-block;
-  width: 70%;
-  margin: 0% 1% 0 1%;
+.grilla-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 30px 30px 30px or repeat(3, 1fr)*/
+  grid-gap: 40px; 
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
 }
 
 .center {
@@ -32,5 +37,9 @@
 .detalles {
   font-family: "Mali", sans-serif;
   font-size: 1.5rem;
+  color: black;
+  text-align: center;
 }
+
+
 

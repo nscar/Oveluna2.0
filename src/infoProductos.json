@@ -1,0 +1,27 @@
+{
+    "infoProductos": [
+        {
+            "titulo": "Posa vasos 1",
+            "precio": "$4000",
+            "imagen": "https://github.com/nscar/Oveluna2.0/blob/master/src/img/1.JPG?raw=true"
+        },
+
+        {
+            "titulo": "Posa vasos 2",
+            "precio": "$2900",
+            "imagen": "https://github.com/nscar/Oveluna2.0/blob/master/src/img/2.JPG?raw=true" 
+        },
+
+        {
+            "titulo": "Posa vasos 3",
+            "precio": "$3300",
+            "imagen": "https://github.com/nscar/Oveluna2.0/blob/master/src/img/3.JPG?raw=true"
+        },
+        {
+            "titulo": "Posa vasos 4",
+            "precio": "$3700",
+            "imagen": "https://github.com/nscar/Oveluna2.0/blob/master/src/img/3.JPG?raw=true"
+        }
+
+    ]
+}

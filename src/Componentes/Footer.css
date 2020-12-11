@@ -1,6 +1,6 @@
 .contain {
-  max-width: 860px;
-  margin: auto;
+  /* max-width: 860px; */
+  /* margin: auto; */
   overflow: hidden;
   /* padding: 5rem 0rem; */
   padding-bottom: 1rem;
@@ -57,4 +57,7 @@ section a, p, h3{
     color:  #2f3541;
   }
 
+  
+   
+  
   

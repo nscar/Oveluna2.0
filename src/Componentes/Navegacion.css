@@ -1,12 +1,9 @@
 .header {
-  height: 80vh;
-  width: 100%;
+  height: 55vh;
   background-image: url("../img/header_bg.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
-  overflow: hidden;
   font-family: "Mali", sans-serif;
+  background-size:cover; 
+  position: relative;
 }
 
 .header h3 {
@@ -47,7 +44,7 @@ header nav a:hover {
   z-index: 1;
   top: 10%;
   left: 50%;
-  margin-top: 105px;
+  margin-top: 100px;
   margin-left: -145px;
   width: 300px;
   height: 100px;
@@ -55,19 +52,17 @@ header nav a:hover {
   color: #fff;
 }
 
-.title {
+.fuenteG {
   /* font-family: "Oswald", sans-serif; */
   font-family: "Mali", sans-serif;
   /* font-family: 'Carter One', sans-serif ; */
   font-size: 3.5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .skin {
   width: 100%;
   /* max-height: 100px; */
-  overflow: hidden;
-  position: absolute;
-  margin: auto;
+  /* overflow: hidden; */
+  /* position: absolute; */
+  /* margin: auto; */
 }
