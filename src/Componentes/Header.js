@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {Row} from "react";
+import React from "react";
 import "./Header.css";
 class Navegacion extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class Navegacion extends React.Component {
       <div className="menu">
         <nav className="">
           <a href="/Oveluna2.0">
-            <h3>Inicio</h3>
+            <h3>Home</h3>
           </a>
           <a href="/Oveluna2.0/CatalogoP">
             <h3>Productos</h3>

@@ -9,7 +9,7 @@ import Final from "./Componentes/Final";
 import "./Componentes/Contenido.css";
 // import Titulo from "./Componentes/Titulo";
 import { infoProductos } from "./infoProductos.json";
-import { Container } from "reactstrap";
+//import { Container } from "reactstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CatalogoP from "./Componentes/CatalogoProductos";
 import Fondo from "./Componentes/Fondo";
@@ -40,6 +40,7 @@ class App extends React.Component {
           <Route path="/Oveluna2.0/CatalogoP">
             <CatalogoP />
           </Route>
+          <Route path='/' exact />
           <Col className="noPadding">
             <Navegacion />
             <Fondo />
