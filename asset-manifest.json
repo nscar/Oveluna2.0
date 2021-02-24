@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Oveluna2.0/static/css/main.5676f54e.chunk.css",
-    "main.js": "/Oveluna2.0/static/js/main.3f47ac8a.chunk.js",
-    "main.js.map": "/Oveluna2.0/static/js/main.3f47ac8a.chunk.js.map",
+    "main.js": "/Oveluna2.0/static/js/main.4c7e0fbb.chunk.js",
+    "main.js.map": "/Oveluna2.0/static/js/main.4c7e0fbb.chunk.js.map",
     "runtime-main.js": "/Oveluna2.0/static/js/runtime-main.ee2bb4dd.js",
     "runtime-main.js.map": "/Oveluna2.0/static/js/runtime-main.ee2bb4dd.js.map",
     "static/css/2.2a86faee.chunk.css": "/Oveluna2.0/static/css/2.2a86faee.chunk.css",
     "static/js/2.277c5287.chunk.js": "/Oveluna2.0/static/js/2.277c5287.chunk.js",
     "static/js/2.277c5287.chunk.js.map": "/Oveluna2.0/static/js/2.277c5287.chunk.js.map",
     "index.html": "/Oveluna2.0/index.html",
-    "precache-manifest.b2d0e8894d0858c07f77ed46ee875974.js": "/Oveluna2.0/precache-manifest.b2d0e8894d0858c07f77ed46ee875974.js",
+    "precache-manifest.0a7326c3af044495911e8eb849140505.js": "/Oveluna2.0/precache-manifest.0a7326c3af044495911e8eb849140505.js",
     "service-worker.js": "/Oveluna2.0/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/Oveluna2.0/static/css/2.2a86faee.chunk.css.map",
     "static/css/main.5676f54e.chunk.css.map": "/Oveluna2.0/static/css/main.5676f54e.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.2a86faee.chunk.css",
     "static/js/2.277c5287.chunk.js",
     "static/css/main.5676f54e.chunk.css",
-    "static/js/main.3f47ac8a.chunk.js"
+    "static/js/main.4c7e0fbb.chunk.js"
   ]
 }
