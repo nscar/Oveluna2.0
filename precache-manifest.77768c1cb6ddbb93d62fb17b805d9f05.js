@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb01a1cc1e790dd5ac1b8424bbfdeba3",
+    "revision": "25f27c0b8a25ceae2e0a706630743e65",
     "url": "/Oveluna2.0/index.html"
   },
   {
-    "revision": "d4b41b0896c7c97b3f48",
+    "revision": "0846aa219f83acca719c",
     "url": "/Oveluna2.0/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "6ec7ccd174005e177804",
+    "revision": "6523fba777e95df87de5",
     "url": "/Oveluna2.0/static/css/main.5676f54e.chunk.css"
   },
   {
-    "revision": "d4b41b0896c7c97b3f48",
-    "url": "/Oveluna2.0/static/js/2.2272c608.chunk.js"
+    "revision": "0846aa219f83acca719c",
+    "url": "/Oveluna2.0/static/js/2.e3007b51.chunk.js"
   },
   {
     "revision": "772341699553daad6bcd7d8925a6b28f",
-    "url": "/Oveluna2.0/static/js/2.2272c608.chunk.js.LICENSE.txt"
+    "url": "/Oveluna2.0/static/js/2.e3007b51.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6ec7ccd174005e177804",
-    "url": "/Oveluna2.0/static/js/main.32bda619.chunk.js"
+    "revision": "6523fba777e95df87de5",
+    "url": "/Oveluna2.0/static/js/main.1cac1f77.chunk.js"
   },
   {
     "revision": "e8b0d349ddc56f04bb91",
