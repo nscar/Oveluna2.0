@@ -37,7 +37,7 @@ class App extends React.Component {
       <Router>
         {/* <Suspense fallback={<div>Loading...</div>}> */}
         <Switch>
-          <Route path="/CatalogoP">
+          <Route path="/Oveluna2.0/CatalogoP">
             <CatalogoP />
           </Route>
           <Col className="noPadding">
