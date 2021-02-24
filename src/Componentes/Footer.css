@@ -1,8 +1,5 @@
 .contain {
-  /* max-width: 860px; */
-  /* margin: auto; */
   overflow: hidden;
-  /* padding: 5rem 0rem; */
   padding-bottom: 1rem;
   padding-top: 1rem;
   text-align: center;
@@ -16,17 +13,17 @@ footer {
   width: 100%;
   margin: 0;
   color: #fff;
-  background: #654ea3; /* fallback for old browsers */
+  background: #654ea3; 
   background: -webkit-linear-gradient(
     to right,
     #eaafc8,
     #654ea3
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #eaafc8,
     #654ea3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
 }
 
 section a, p, h3{

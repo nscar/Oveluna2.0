@@ -1,0 +1,21 @@
+.fondo {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/header_bg.JPG");
+  height: 85vh;
+  background-size: cover;
+}
+
+.fuenteG {
+  font-size: 4rem;
+}
+
+.header-content {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-left: -185px;
+  text-align: center;
+  color: #fff;
+  font-family: "Mali", sans-serif;
+}
+
+

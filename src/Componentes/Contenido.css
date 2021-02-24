@@ -7,19 +7,15 @@
 }
 
 .grilla-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* 30px 30px 30px or repeat(3, 1fr)*/
-  grid-gap: 40px; 
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  justify-content: space-around;
 }
 
-.center {
-  margin: auto;
-  width: 50%;
-  /* border: 3px solid green; */
-  text-align: center;
+.arreglo{
+  width: 18%;
 }
 
 .center-foot{
@@ -30,15 +26,15 @@
 .expand-center {
   margin: auto;
   width: 100%;
-  /* border: 3px solid green; */
   text-align: center;
 }
 
 .detalles {
   font-family: "Mali", sans-serif;
   font-size: 1.5rem;
-  color: black;
+  color:white;
   text-align: center;
+  background-color: #906096;
 }
 
 

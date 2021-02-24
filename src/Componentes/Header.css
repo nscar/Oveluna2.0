@@ -1,0 +1,42 @@
+header h3 {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Mali", sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin: 0;
+  
+}
+
+header nav {
+  line-height: 0px;
+  background-color: #343a40;
+  width: 100%;
+  
+}
+
+header nav a {
+  display: inline-flex;
+  color: #fff;
+  /* text-decoration: none; */
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  line-height: normal;
+  -webkit-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+header nav a:hover {
+  background: #d7bde2;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu {
+  float: none;
+  width: 100%;
+  text-align: end;
+}

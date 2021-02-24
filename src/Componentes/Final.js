@@ -4,7 +4,7 @@ class Final extends React.Component{
     render(){
         return(
 <footer className="footer center"> 
-<p>Oveluna Web &copy; 2020 - Todos los derechos reservados.</p>
+<p>Oveluna Web &copy; 2021 - Todos los derechos reservados.</p>
 </footer>
         );
     }

@@ -1,8 +1,18 @@
-.subtitle {
-    /* font-family: "Oswald", sans-serif; */
+.titles {
     font-family: 'Mali', sans-serif ;
-    /* font-family: 'Carter One', sans-serif ; */
-    font-size: 1.5rem;
-    padding-bottom: 3rem;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
     padding-top: 3rem;
+    font-weight: bold;
   }
+
+.fas { color: rgba(194, 146, 189, 0.705); } 
+
+.color{
+  color: rgb(108, 83, 165);
+}
+.center {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}

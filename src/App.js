@@ -1,5 +1,5 @@
 import React from "react";
-import Navegacion from "./Componentes/Navegacion";
+import Navegacion from "./Componentes/Header";
 import "./App.css";
 import Producto from "./Componentes/Producto";
 import { Col } from "reactstrap";
@@ -10,6 +10,11 @@ import "./Componentes/Contenido.css";
 // import Titulo from "./Componentes/Titulo";
 import { infoProductos } from "./infoProductos.json";
 import { Container } from "reactstrap";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import CatalogoP from "./Componentes/CatalogoProductos";
+import Fondo from "./Componentes/Fondo";
+
+//const Cpro = lazy(() => import("./Componentes/CatalogoProductos"));
 
 class App extends React.Component {
   constructor() {
@@ -18,24 +23,35 @@ class App extends React.Component {
   }
 
   render() {
-    const arregloComp = this.state.infoProductos.map((infoProductos, i) => {
+    const arregloComp = this.state.infoProductos.map((elemento, i) => {
       return (
         <Producto
           key={i}
-          titulo={infoProductos.titulo}
-          imagen={infoProductos.imagen}
-          precio={infoProductos.precio}
+          titulo={elemento.titulo}
+          imagen={elemento.imagen}
+          precio={elemento.precio}
         />
       );
     });
     return (
-      <Col className="noPadding">
-        <Navegacion />
-        <Container className="grilla-4">{arregloComp}</Container>
-        <Relleno />
-        <Footer />
-        <Final />
-      </Col>
+      <Router>
+        {/* <Suspense fallback={<div>Loading...</div>}> */}
+        <Switch>
+          <Route path="/CatalogoP">
+            <CatalogoP />
+          </Route>
+          <Col className="noPadding">
+            <Navegacion />
+            <Fondo />
+            <h1 className="center titles color">Productos</h1>,
+            <div className="grilla-4">{arregloComp}</div> {/* se cambio el container por div (ej:grid-3)*/}
+            <Relleno />
+            <Footer />
+            <Final />
+          </Col>
+        </Switch>
+        {/* </Suspense> */}
+      </Router>
     );
   }
 }

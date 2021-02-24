@@ -14,7 +14,7 @@ class Footer extends React.Component{
             <div>
                 <a href="http://www.facebook.com"><i className="fab fa-facebook fa-5x"></i></a>
                 <h3><a href="http://www.facebook.com">Facebook</a></h3>
-                <p>Revisa cada uno de nuestros trabajos oficiales y no oficiales y coméntanos tu opinión</p>
+                <p>Revisa cada uno de nuestros trabajos oficiales y no oficiales y dános tu opinión</p>
             </div>
             <div>
                 <a href="http://www.Instagram.com"><i className="fab fa-instagram-square fa-5x"></i></a>
