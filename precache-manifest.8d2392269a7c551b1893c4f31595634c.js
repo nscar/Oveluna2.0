@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "998b80d015e4dafe3f174ff7646d4fff",
+    "revision": "959aa56652248a872708bc723285be27",
     "url": "/Oveluna2.0/index.html"
   },
   {
