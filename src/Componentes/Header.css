@@ -8,7 +8,6 @@ header h3 {
 }
 
 header nav {
-  line-height: 0px;
   background-color: #343a40;
   width: 100%;
   
@@ -36,6 +35,7 @@ header nav a:hover {
 }
 
 .menu {
+  line-height: 0px;
   float: none;
   width: 100%;
   text-align: end;

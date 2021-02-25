@@ -34,25 +34,16 @@ class App extends React.Component {
       );
     });
     return (
-      <Router>
-        {/* <Suspense fallback={<div>Loading...</div>}> */}
-        <Switch>
-          <Route path="/Oveluna2.0/CatalogoP">
-            <CatalogoP />
-          </Route>
-          <Route path='/' exact />
-          <Col className="noPadding">
-            <Navegacion />
-            <Fondo />
-            <h1 className="center titles color">Productos</h1>,
-            <div className="grilla-4">{arregloComp}</div> {/* se cambio el container por div (ej:grid-3)*/}
-            <Relleno />
-            <Footer />
-            <Final />
-          </Col>
-        </Switch>
-        {/* </Suspense> */}
-      </Router>
+      <Col className="noPadding">
+        <Navegacion />
+        <Fondo />
+        <h1 className="center titles color">Productos</h1>,
+        <div className="grilla-4">{arregloComp}</div>{" "}
+        {/* se cambio el container por div (ej:grid-3)*/}
+        <Relleno />
+        <Footer />
+        <Final />
+      </Col>
     );
   }
 }

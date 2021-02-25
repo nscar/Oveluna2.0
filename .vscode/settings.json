@@ -11,7 +11,7 @@
         "editor.quickSuggestions": {
             "strings": true
         },
-        "editor.suggest.insertMode": "replace"
+        "editor.suggest.insertMode": "insert"
     },
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.fontFamily": "Fira Code Retina",
@@ -19,5 +19,11 @@
     "terminal.integrated.letterSpacing": 0,
     "terminal.integrated.rendererType": "auto",
     "terminal.integrated.cursorBlinking": true,
+    "editor.lineNumbers": "relative",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.cursorSmoothCaretAnimation": true,
+    "terminal.integrated.cursorStyle": "block",
+    "editor.smoothScrolling": true,
+
     
 }
