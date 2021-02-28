@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+
 footer {
   padding: 2.2rem;
 }
@@ -27,6 +28,7 @@ footer {
 }
 
 section a, p, h3{
+  
     color: #fff;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
@@ -54,7 +56,14 @@ section a, p, h3{
     color:  #2f3541;
   }
 
-  
+  .grilla-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 30px 30px 30px or repeat(3, 1fr)*/
+    grid-gap: 10px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-right: 0rem;
+  }
    
   
   

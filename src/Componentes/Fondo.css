@@ -5,17 +5,26 @@
 }
 
 .fuenteG {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
-.header-content {
-  position: absolute;
-  top: 15%;
+.fondo-content {
+  /* position: absolute; */
+  /* top: 15%;
   left: 50%;
   margin-left: -185px;
-  text-align: center;
+  text-align: center; */
   color: #fff;
   font-family: "Mali", sans-serif;
+  min-height: 22vh;
 }
 
-
+.fondo-titles {
+  text-align: center;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}

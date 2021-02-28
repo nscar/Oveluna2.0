@@ -10,8 +10,8 @@ import "./Componentes/Contenido.css";
 // import Titulo from "./Componentes/Titulo";
 import { infoProductos } from "./infoProductos.json";
 //import { Container } from "reactstrap";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import CatalogoP from "./Componentes/CatalogoProductos";
+
+
 import Fondo from "./Componentes/Fondo";
 
 //const Cpro = lazy(() => import("./Componentes/CatalogoProductos"));
@@ -28,7 +28,7 @@ class App extends React.Component {
         <Producto
           key={i}
           titulo={elemento.titulo}
-          imagen={elemento.imagen}
+          imagen={require('./img/' + elemento.imagen)}
           precio={elemento.precio}
         />
       );

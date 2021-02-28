@@ -5,7 +5,7 @@ class CatalogoP extends React.Component{
     render(){
         return(
            <div>
-               <Navegacion/>,
+               <Navegacion/>
                <h1 className="titles center">Productos</h1>
            </div>
         );
