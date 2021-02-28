@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/Oveluna2.0/static/css/main.30d7d187.chunk.css",
-    "main.js": "/Oveluna2.0/static/js/main.b3bf68d6.chunk.js",
-    "main.js.map": "/Oveluna2.0/static/js/main.b3bf68d6.chunk.js.map",
+    "main.css": "/Oveluna2.0/static/css/main.d3e85645.chunk.css",
+    "main.js": "/Oveluna2.0/static/js/main.72981db1.chunk.js",
+    "main.js.map": "/Oveluna2.0/static/js/main.72981db1.chunk.js.map",
     "runtime-main.js": "/Oveluna2.0/static/js/runtime-main.ee2bb4dd.js",
     "runtime-main.js.map": "/Oveluna2.0/static/js/runtime-main.ee2bb4dd.js.map",
     "static/css/2.2a86faee.chunk.css": "/Oveluna2.0/static/css/2.2a86faee.chunk.css",
-    "static/js/2.b142bb01.chunk.js": "/Oveluna2.0/static/js/2.b142bb01.chunk.js",
-    "static/js/2.b142bb01.chunk.js.map": "/Oveluna2.0/static/js/2.b142bb01.chunk.js.map",
+    "static/js/2.bc405828.chunk.js": "/Oveluna2.0/static/js/2.bc405828.chunk.js",
+    "static/js/2.bc405828.chunk.js.map": "/Oveluna2.0/static/js/2.bc405828.chunk.js.map",
     "index.html": "/Oveluna2.0/index.html",
-    "precache-manifest.99ca6656e22a0c83a361c5af2ca84e21.js": "/Oveluna2.0/precache-manifest.99ca6656e22a0c83a361c5af2ca84e21.js",
+    "precache-manifest.38c5a93d42c1ca15bd58c67dc03c0e5b.js": "/Oveluna2.0/precache-manifest.38c5a93d42c1ca15bd58c67dc03c0e5b.js",
     "service-worker.js": "/Oveluna2.0/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/Oveluna2.0/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.30d7d187.chunk.css.map": "/Oveluna2.0/static/css/main.30d7d187.chunk.css.map",
-    "static/js/2.b142bb01.chunk.js.LICENSE.txt": "/Oveluna2.0/static/js/2.b142bb01.chunk.js.LICENSE.txt",
-    "static/media/Fondo.css": "/Oveluna2.0/static/media/header_bg.f4f9391c.JPG"
+    "static/css/main.d3e85645.chunk.css.map": "/Oveluna2.0/static/css/main.d3e85645.chunk.css.map",
+    "static/js/2.bc405828.chunk.js.LICENSE.txt": "/Oveluna2.0/static/js/2.bc405828.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/Oveluna2.0/static/media/1.0e8ff04d.jpg",
+    "static/media/2.jpg": "/Oveluna2.0/static/media/2.a068b539.jpg",
+    "static/media/3.jpg": "/Oveluna2.0/static/media/3.64ae3a07.jpg",
+    "static/media/header_bg.JPG": "/Oveluna2.0/static/media/header_bg.f4f9391c.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.ee2bb4dd.js",
     "static/css/2.2a86faee.chunk.css",
-    "static/js/2.b142bb01.chunk.js",
-    "static/css/main.30d7d187.chunk.css",
-    "static/js/main.b3bf68d6.chunk.js"
+    "static/js/2.bc405828.chunk.js",
+    "static/css/main.d3e85645.chunk.css",
+    "static/js/main.72981db1.chunk.js"
   ]
 }

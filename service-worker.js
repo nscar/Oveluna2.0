@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Oveluna2.0/precache-manifest.99ca6656e22a0c83a361c5af2ca84e21.js"
+  "/Oveluna2.0/precache-manifest.38c5a93d42c1ca15bd58c67dc03c0e5b.js"
 );
 
 self.addEventListener('message', (event) => {
