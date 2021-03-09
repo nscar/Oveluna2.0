@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a38dd32d9d1f2ddcbc7640c4395b5759",
+    "revision": "8cfbccfff84c64a8c945fb31e732a905",
     "url": "/Oveluna2.0/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Oveluna2.0/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "47996fb1c2d809ed195e",
+    "revision": "dd980318812b8e41781a",
     "url": "/Oveluna2.0/static/css/main.b4b58810.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Oveluna2.0/static/js/2.bc405828.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "47996fb1c2d809ed195e",
-    "url": "/Oveluna2.0/static/js/main.dd0e6a5f.chunk.js"
+    "revision": "dd980318812b8e41781a",
+    "url": "/Oveluna2.0/static/js/main.f70af759.chunk.js"
   },
   {
     "revision": "e8b0d349ddc56f04bb91",
