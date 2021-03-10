@@ -1,8 +1,8 @@
 .titles {
     font-family: 'Mali', sans-serif ;
     font-size: 1.8rem;
-    padding-bottom: 2rem;
-    padding-top: 3rem;
+    padding-bottom: 4rem;
+    padding-top: 6rem;
     font-weight: bold;
   }
 
@@ -15,4 +15,8 @@
   margin: auto;
   width: 40%;
   text-align: center;
+}
+
+html{
+  font-size: 14px;
 }

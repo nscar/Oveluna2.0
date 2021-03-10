@@ -37,7 +37,7 @@ class App extends React.Component {
       <Col className="noPadding">
         <Navegacion />
         <Fondo />
-        <h1 className="center titles color">Productos</h1>,
+        <h1 className="center titles color">Productos</h1>
         <div className="grilla-4">{arregloComp}</div>{" "}
         {/* se cambio el container por div (ej:grid-3)*/}
         <Relleno />

@@ -10,10 +10,10 @@ class Navegacion extends React.Component {
           <a href="/Oveluna2.0/#/">
             <h3>Inicio</h3>
           </a>
-          <a href="/Oveluna2.0#/CatalogoP">
+          <a href="/Oveluna2.0/#CatalogoP">
             <h3>Productos</h3>
           </a>
-          <a href="/Oveluna2.0/#/">
+          <a href="/Oveluna2.0/#ContactoP">
             <h3>Contacto</h3>
           </a>
         </nav>
