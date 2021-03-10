@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Oveluna2.0/static/css/main.1f2dbdca.chunk.css",
-    "main.js": "/Oveluna2.0/static/js/main.89c0b490.chunk.js",
-    "main.js.map": "/Oveluna2.0/static/js/main.89c0b490.chunk.js.map",
+    "main.css": "/Oveluna2.0/static/css/main.3033cf6a.chunk.css",
+    "main.js": "/Oveluna2.0/static/js/main.29527854.chunk.js",
+    "main.js.map": "/Oveluna2.0/static/js/main.29527854.chunk.js.map",
     "runtime-main.js": "/Oveluna2.0/static/js/runtime-main.ee2bb4dd.js",
     "runtime-main.js.map": "/Oveluna2.0/static/js/runtime-main.ee2bb4dd.js.map",
     "static/css/2.2a86faee.chunk.css": "/Oveluna2.0/static/css/2.2a86faee.chunk.css",
-    "static/js/2.bc405828.chunk.js": "/Oveluna2.0/static/js/2.bc405828.chunk.js",
-    "static/js/2.bc405828.chunk.js.map": "/Oveluna2.0/static/js/2.bc405828.chunk.js.map",
+    "static/js/2.39dceb8c.chunk.js": "/Oveluna2.0/static/js/2.39dceb8c.chunk.js",
+    "static/js/2.39dceb8c.chunk.js.map": "/Oveluna2.0/static/js/2.39dceb8c.chunk.js.map",
     "index.html": "/Oveluna2.0/index.html",
-    "precache-manifest.bc350f3d85f199f3d9483f5bb9cb2482.js": "/Oveluna2.0/precache-manifest.bc350f3d85f199f3d9483f5bb9cb2482.js",
+    "precache-manifest.a3e30eab67a47d269b42df5f9061fce0.js": "/Oveluna2.0/precache-manifest.a3e30eab67a47d269b42df5f9061fce0.js",
     "service-worker.js": "/Oveluna2.0/service-worker.js",
     "static/css/2.2a86faee.chunk.css.map": "/Oveluna2.0/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.1f2dbdca.chunk.css.map": "/Oveluna2.0/static/css/main.1f2dbdca.chunk.css.map",
-    "static/js/2.bc405828.chunk.js.LICENSE.txt": "/Oveluna2.0/static/js/2.bc405828.chunk.js.LICENSE.txt",
+    "static/css/main.3033cf6a.chunk.css.map": "/Oveluna2.0/static/css/main.3033cf6a.chunk.css.map",
+    "static/js/2.39dceb8c.chunk.js.LICENSE.txt": "/Oveluna2.0/static/js/2.39dceb8c.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/Oveluna2.0/static/media/1.0e8ff04d.jpg",
     "static/media/2.jpg": "/Oveluna2.0/static/media/2.a068b539.jpg",
     "static/media/3.jpg": "/Oveluna2.0/static/media/3.64ae3a07.jpg",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.ee2bb4dd.js",
     "static/css/2.2a86faee.chunk.css",
-    "static/js/2.bc405828.chunk.js",
-    "static/css/main.1f2dbdca.chunk.css",
-    "static/js/main.89c0b490.chunk.js"
+    "static/js/2.39dceb8c.chunk.js",
+    "static/css/main.3033cf6a.chunk.css",
+    "static/js/main.29527854.chunk.js"
   ]
 }
