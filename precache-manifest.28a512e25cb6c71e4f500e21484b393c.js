@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e250f75e5ec4236b3c831c72afb22266",
+    "revision": "9bfae0e24801cf0472d4bbd6fef09be4",
     "url": "/Oveluna2.0/index.html"
   },
   {
-    "revision": "7d180789c9eadde073bd",
+    "revision": "4e6400b704b8f98f10f2",
     "url": "/Oveluna2.0/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "164b3728c015ed0ce008",
-    "url": "/Oveluna2.0/static/css/main.3033cf6a.chunk.css"
+    "revision": "6a3c8205bfa14843489a",
+    "url": "/Oveluna2.0/static/css/main.9122c87a.chunk.css"
   },
   {
-    "revision": "7d180789c9eadde073bd",
-    "url": "/Oveluna2.0/static/js/2.39dceb8c.chunk.js"
+    "revision": "4e6400b704b8f98f10f2",
+    "url": "/Oveluna2.0/static/js/2.c1cf90d1.chunk.js"
   },
   {
     "revision": "772341699553daad6bcd7d8925a6b28f",
-    "url": "/Oveluna2.0/static/js/2.39dceb8c.chunk.js.LICENSE.txt"
+    "url": "/Oveluna2.0/static/js/2.c1cf90d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "164b3728c015ed0ce008",
-    "url": "/Oveluna2.0/static/js/main.29527854.chunk.js"
+    "revision": "6a3c8205bfa14843489a",
+    "url": "/Oveluna2.0/static/js/main.e1bc58fa.chunk.js"
   },
   {
     "revision": "e8b0d349ddc56f04bb91",
@@ -40,7 +40,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Oveluna2.0/static/media/3.64ae3a07.jpg"
   },
   {
+    "revision": "1ced3627f65db62e8a9a870a6c7955f3",
+    "url": "/Oveluna2.0/static/media/close.1ced3627.svg"
+  },
+  {
     "revision": "f4f9391c387ebe98db73ed7da1571514",
     "url": "/Oveluna2.0/static/media/header_bg.f4f9391c.JPG"
+  },
+  {
+    "revision": "de609fbda7b2fd6e5f8d78b6137b4dfd",
+    "url": "/Oveluna2.0/static/media/menu.de609fbd.svg"
   }
 ]);
