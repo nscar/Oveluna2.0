@@ -4,10 +4,12 @@ class Fondo extends React.Component {
   render() {
     return (
       <div className="fondo fondo-titles">
-        <div className="fondo-content animated bounce delay-2s">
+        <div>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <h1 className="fuenteG">OVELUNA</h1> 
-          <h4 className="">Arte y tejidos que hablan de ti:</h4>
+        <div className="animate__animated animate__slideInDown">
+        <h1>OVELUNA</h1> 
+        </div>
+          <h4>Arte y tejidos que hablan de ti:</h4>
         </div>
       </div>
     );

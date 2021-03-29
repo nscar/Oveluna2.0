@@ -1,30 +1,23 @@
-.fondo {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/header_bg.JPG");
+.fondo{
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(156, 98, 98, 0.4)),url("../img/header_bg.JPG");
   height: 85vh;
   background-size: cover;
-}
-
-.fuenteG {
-  font-size: 5rem;
-}
-
-.fondo-content {
-  /* position: absolute; */
-  /* top: 15%;
-  left: 50%;
-  margin-left: -185px;
-  text-align: center; */
-  color: #fff;
-  font-family: "Mali", sans-serif;
-  min-height: 22vh;
-}
-
-.fondo-titles {
   text-align: center;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
+
+.fondo h1{
+  display: inline;
+  font-size: 5.5rem;
+}
+
+.fondo h1, h4 {
+  color: #fff;
+  font-family: "Mali", sans-serif;
+  min-height: 23vh;
+}
+

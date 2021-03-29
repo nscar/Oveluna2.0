@@ -1,5 +1,4 @@
 import React from "react";
-import Navegacion from "./Componentes/Header";
 import "./App.css";
 import Producto from "./Componentes/Producto";
 import { Col } from "reactstrap";
@@ -13,6 +12,7 @@ import { infoProductos } from "./infoProductos.json";
 
 
 import Fondo from "./Componentes/Fondo";
+import Navbar from "./Componentes/Navbar.js";
 
 //const Cpro = lazy(() => import("./Componentes/CatalogoProductos"));
 
@@ -34,9 +34,10 @@ class App extends React.Component {
       );
     });
     return (
-      <Col className="noPadding">
-        <Navegacion />
-        <Fondo />
+      <Col className="noPadding"> 
+        {/* <Navegacion/> */}
+        <Navbar/>
+        <Fondo/>
         <h1 className="center titles color">Productos</h1>
         <div className="grilla-4">{arregloComp}</div>{" "}
         {/* se cambio el container por div (ej:grid-3)*/}
