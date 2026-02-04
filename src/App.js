@@ -6,20 +6,14 @@ import Relleno from "./Componentes/Relleno";
 import Footer from "./Componentes/Footer";
 import Final from "./Componentes/Final";
 import "./Componentes/Contenido.css";
-// import Titulo from "./Componentes/Titulo";
-import { infoProductos } from "./infoProductos.json";
-//import { Container } from "reactstrap";
-
-
+import data from "./infoProductos.json";
 import Fondo from "./Componentes/Fondo";
 import Navbar from "./Componentes/Navbar.js";
-
-//const Cpro = lazy(() => import("./Componentes/CatalogoProductos"));
 
 class App extends React.Component {
   constructor() {
     super();
-    this.state = { infoProductos };
+    this.state = { infoProductos: data.infoProductos || [] };
   }
 
   render() {
@@ -34,13 +28,11 @@ class App extends React.Component {
       );
     });
     return (
-      <Col className="noPadding"> 
-        {/* <Navegacion/> */}
-        <Navbar/>
-        <Fondo/>
+      <Col className="noPadding">
+        <Navbar />
+        <Fondo />
         <h1 className="center titles color">Productos</h1>
-        <div className="grilla-4">{arregloComp}</div>{" "}
-        {/* se cambio el container por div (ej:grid-3)*/}
+        <div className="grilla-4">{arregloComp}</div>
         <Relleno />
         <Footer />
         <Final />

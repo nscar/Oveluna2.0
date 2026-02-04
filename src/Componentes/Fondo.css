@@ -1,23 +1,166 @@
-.fondo{
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(156, 98, 98, 0.4)),url("../img/header_bg.JPG");
-  height: 85vh;
+.fondo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(101, 78, 163, 0.4)), url("../img/header_bg.JPG");
+  min-height: 85vh;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
-  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.fondo h1{
-  display: inline;
+.fondo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+  pointer-events: none;
+}
+
+.fondo>div {
+  position: relative;
+  z-index: 1;
+}
+
+.fondo h1 {
+  display: inline-block;
   font-size: 5.5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0e6ff 25%, #d7bde2 50%, #b19cd9 75%, #ffffff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s ease-in-out infinite;
+  text-shadow:
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 40px rgba(215, 189, 226, 0.4),
+    0 0 60px rgba(177, 156, 217, 0.3);
+  filter: drop-shadow(0 4px 12px rgba(108, 83, 165, 0.6));
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-family: "Mali", sans-serif;
 }
 
-.fondo h1, h4 {
+.fondo h1::before {
+  content: 'OVELUNA';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #d7bde2, #b19cd9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0.7;
+  font-family: "Mali", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+  padding: 0.5rem 1rem;
+}
+
+@keyframes shimmer {
+
+  0%,
+  100% {
+    background-position: 0% center;
+  }
+
+  50% {
+    background-position: 100% center;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fondo h4 {
   color: #fff;
   font-family: "Mali", sans-serif;
-  min-height: 23vh;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.4),
+    0 4px 8px rgba(108, 83, 165, 0.3);
+  margin-top: 1.5rem;
+  animation: fadeInUp 1.2s ease-out 0.3s both;
+  position: relative;
+  padding: 0.5rem 0;
 }
 
+.fondo h4::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d7bde2, transparent);
+  box-shadow: 0 0 10px rgba(215, 189, 226, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .fondo {
+    background-attachment: scroll;
+    min-height: 70vh;
+  }
+
+  .fondo h1 {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+  }
+
+  .fondo h1::before {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+  }
+
+  .fondo h4 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fondo h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .fondo h1::before {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .fondo h4 {
+    font-size: 1.2rem;
+  }
+
+  .fondo h4::after {
+    width: 60px;
+  }
+}

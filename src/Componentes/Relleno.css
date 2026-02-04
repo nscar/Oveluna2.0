@@ -1,22 +1,61 @@
 .titles {
-    font-family: 'Mali', sans-serif;
-    font-size: 1.8rem;
-    padding-bottom: 4rem;
-    padding-top: 6rem;
-    font-weight: bold;
-  }
+  font-family: 'Mali', sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
 
-.fas { color: rgba(194, 146, 189, 0.705); } 
+.titles::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #d7bde2, rgb(108, 83, 165));
+  border-radius: 2px;
+}
 
-.color{
+.fas {
+  color: rgba(194, 146, 189, 0.705);
+}
+
+.color {
   color: rgb(108, 83, 165);
 }
+
 .center {
   margin: auto;
-  width: 40%;
+  width: 100%;
+  max-width: 600px;
   text-align: center;
 }
 
-html{
+html {
   font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+
+  .titles {
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+
+  .titles {
+    font-size: 1.8rem;
+  }
 }

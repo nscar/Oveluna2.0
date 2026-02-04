@@ -1,45 +1,54 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from 'react-icons/ai';
-import {Sidebar} from './Sidebar';
+import { Sidebar } from './Sidebar';
 import './Navbar.css';
-import {IconContext} from 'react-icons';
+import { IconContext } from 'react-icons';
 
 function Navbar() {
-  const [sidebar, setSidebar] = useState(false)
+  const [sidebar, setSidebar] = useState(false);
 
-  const showSidebar = () => setSidebar(!sidebar)
+  const toggleSidebar = () => setSidebar(!sidebar);
+  const closeSidebar = () => setSidebar(false);
+
   return (
     <>
-    <IconContext.Provider value={{color:'#fff'}}>
-      <div className="navbar">
-          <Link to="#" className='menu-bars'>
-            <FaIcons.FaBars onClick={showSidebar}/>
-          </Link>
-      </div>
-      <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-        <ul className="nav-menu-items" onClick={showSidebar}>
-          <li className="navbar-toggle">
-            <Link to="#" className="menu-bars">
-              <AiIcons.AiOutlineClose/>
-            </Link>
-          </li>
-          {Sidebar.map((item, index) =>{
-            return(
-              <li key={index} className={item.cName}>
-                <Link to={item.path}>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </Link>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        {/* ÚNICA BARRA NAVBAR */}
+        <nav className="navbar">
+
+          {/* BOTÓN HAMBURGUESA - Solo visible en móvil por CSS */}
+          <button className='menu-bars' onClick={toggleSidebar}>
+            <FaIcons.FaBars />
+          </button>
+
+          {/* MENÚ / SIDEBAR */}
+          <div className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+            <ul className="nav-menu-items">
+
+              {/* BOTÓN CERRAR X - Solo visible en móvil por CSS */}
+              <li className="navbar-toggle">
+                <button className="menu-bars" onClick={closeSidebar}>
+                  <AiIcons.AiOutlineClose />
+                </button>
               </li>
-            )
-          })}
-        </ul>
-      </nav>
+
+              {/* ITEMS DEL MENÚ */}
+              {Sidebar.map((item, index) => (
+                <li key={index} className="nav-text">
+                  <Link to={item.path} onClick={closeSidebar}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
       </IconContext.Provider>
     </>
   );
 }
 
-export default Navbar
+export default Navbar;

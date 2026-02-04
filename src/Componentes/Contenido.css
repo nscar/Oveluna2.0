@@ -1,15 +1,131 @@
 .grilla-4 {
   display: flex;
-  flex-wrap: nowrap;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
+
+/* ESTILOS PÁGINAS CATÁLOGO Y CONTACTO */
+.catalogo-page,
+.contacto-page {
+  background-color: #121212;
+  min-height: 100vh;
+  color: white;
+}
+
+.header-simple {
+  text-align: center;
+  padding: 6rem 2rem 2rem;
+  font-family: 'Mali', sans-serif;
+}
+
+.header-simple h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.header-simple p {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* CONTACTO CARD */
+.contacto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+}
+
+.contacto-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  padding: 4rem;
+  border-radius: 30px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.contacto-card h1 {
+  font-family: 'Mali', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.divider-small {
+  width: 60px;
+  height: 4px;
+  background: #d7bde2;
+  margin: 1.5rem auto;
+  border-radius: 2px;
+}
+
+.contacto-card .subtitle {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  margin-bottom: 3rem;
+}
+
+.contacto-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+
+.info-item svg {
+  color: #d7bde2;
+  font-size: 1.8rem;
+}
+
+.btn-contacto-ig {
+  background: linear-gradient(135deg, #eaafc8 0%, #654ea3 100%);
+  border: none;
+  padding: 1.2rem 2.5rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(101, 78, 163, 0.3);
+}
+
+.btn-contacto-ig:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(101, 78, 163, 0.5);
+}
+
 
 .arreglo {
   margin-bottom: 30px;
-  width: 18%;
-  /* display: inline-block; */
+  width: calc(25% - 2rem);
+  min-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 25px;
+  /* Redondeado general aumentado */
+}
+
+.arreglo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(108, 83, 165, 0.3);
 }
 
 .center-foot {
@@ -24,44 +140,224 @@
 }
 
 .detalles.card-body {
-  padding: 0.5rem;
+  padding: 1.5rem;
   font-family: "Mali", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   text-align: center;
   background-color: rgb(144, 96, 150);
+  transition: background-color 0.3s ease;
+  border-bottom-left-radius: 25px;
+  /* Redondeado inferior izquierdo */
+  border-bottom-right-radius: 25px;
+  /* Redondeado inferior derecho */
+}
+
+.arreglo:hover .detalles.card-body {
+  background-color: rgb(108, 83, 165);
 }
 
 .zoom {
   max-width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .zoom:hover {
-  -ms-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  opacity: 0.8;
+  transform: scale(1.08);
+  opacity: 0.9;
 }
 
 .zoom-restraint {
   overflow: hidden;
   cursor: pointer;
+  border-top-left-radius: 25px;
+  /* Redondeado superior izquierdo */
+  border-top-right-radius: 25px;
+  /* Redondeado superior derecho */
 }
 
 .zoom .card-img {
   position: relative;
 }
 
-.arreglo .card-img, .card-img-top {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+.arreglo .card-img,
+.card-img-top {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
-.arreglo .card-img, .card-img-bottom {
-  border-bottom-right-radius: 0px; 
+
+.arreglo .card-img,
+.card-img-bottom {
+  border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .arreglo {
+    width: calc(33.333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .arreglo {
+    width: calc(50% - 2rem);
+  }
+
+  .grilla-4 {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .arreglo {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* LIGHTBOX PREMIUM STYLES - TEXTO DENTRO DE FOTO */
+.lightbox-backdrop {
+  background-color: rgba(10, 10, 10, 0.94) !important;
+  backdrop-filter: blur(15px) saturate(180%);
+}
+
+.lightbox-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  max-width: 90vw !important;
+  margin: auto !important;
+}
+
+.lightbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.lightbox-container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.lightbox-image-box {
+  position: relative;
+  /* FUNDAMENTAL para el texto dentro */
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.9);
+  animation: lightboxIn 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.lightbox-img-premium {
+  max-height: 85vh;
+  max-width: 85vw;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* TEXTO DENTRO DE LA FOTO - BOTTOM LEFT */
+.lightbox-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 2rem 2rem;
+  /* Más espacio arriba para el gradiente */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+  color: white;
+  font-family: 'Mali', sans-serif;
+  text-align: left;
+  pointer-events: none;
+  /* No interfiere al cerrar */
+}
+
+.lightbox-text-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-description {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-style: italic;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-divider {
+  width: 60px;
+  height: 4px;
+  background: #d7bde2;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(215, 189, 226, 0.5);
+}
+
+.lightbox-price-tag {
+  font-size: 2rem;
+  color: #d7bde2;
+  font-weight: 900;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2005;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.lightbox-close:hover {
+  background: #d7bde2;
+  color: #121212;
+  transform: scale(1.1) rotate(90deg);
+}
+
+@keyframes lightboxIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lightbox-text-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .lightbox-price-tag {
+    font-size: 1.6rem;
+  }
+
+  .lightbox-info-overlay {
+    padding: 2rem 1.5rem 1.5rem;
+  }
 }
