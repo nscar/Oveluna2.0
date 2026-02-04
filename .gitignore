@@ -11,6 +11,12 @@
 # production
 /build
 
+# env
+.env
+
+# windows artifacts
+nul
+
 # misc
 .DS_Store
 .env.local
