@@ -11,6 +11,12 @@
 # production
 /build
 
+# env
+.env
+
+# windows artifacts
+nul
+
 # misc
 .DS_Store
 .env.local
@@ -21,3 +27,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+cookies.txt
+@mcp_config.json

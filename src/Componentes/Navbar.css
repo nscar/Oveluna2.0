@@ -1,116 +1,188 @@
-.navbar{
-  background-color: #343a40;
-  height: 90px;
+/* RESET Y TIPOGRAFÍA BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-menu{
-  margin-top: -55px; 
-  line-height: 0px;
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* NAVBAR PREMIUM */
+.navbar {
+  background-color: rgba(18, 18, 18, 0.98);
+  /* Color oscuro moderno (Obsidiana) */
+  backdrop-filter: blur(12px);
+  /* Efecto cristal suave */
+  height: 70px;
+  /* Reducido para mayor ajuste */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100%;
-  text-align: end;
-  /* display: none; */
-  position: absolute;
-  
+  border: none;
+  /* Eliminamos cualquier línea o borde de otro color */
+  transition: all 0.4s ease;
 }
+
+/* BOTÓN HAMBURGUESA MEJORADO */
 .menu-bars {
- display: none;
-}
-
-.nav-text{
-  display: inline; 
-}
-
-.nav-text a:hover{
-  border-radius: 40px;
-  background: #d7bde2;
+  display: none;
+  font-size: 2.2rem;
   color: #fff;
-  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-text a{
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  -webkit-transition: all 600ms ease;
-  -o-transition: all 600ms ease;
-  transition: all 600ms ease;
+.menu-bars:hover {
+  background-color: rgba(215, 189, 226, 0.1);
+  transform: scale(1.1);
+}
+
+/* CONTENEDOR DEL MENÚ */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* LISTA DE ITEMS */
+.nav-menu-items {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* ESTILO DE LOS LINKS (PC) */
+.nav-text a {
+  padding: 0.7rem 1.6rem;
   color: #fff;
   font-family: "Mali", sans-serif;
-  font-weight: bold;
-  font-size: 1.8rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
 }
-span {
-  margin-left: 8px;
+
+/* ICONO ANIMADO DENTRO DEL LINK */
+.nav-text a svg {
+  transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 720px) {    
-    .menu-bars {
-      display: flex;
-      margin-left: 1rem;
-      font-size: 3rem;
-      background: none;
-    }
+/* EFECTO HOVER PREMIUM */
+.nav-text a:hover {
+  background: linear-gradient(135deg, rgba(215, 189, 226, 0.2) 0%, rgba(215, 189, 226, 0.1) 100%);
+  color: #d7bde2;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-decoration: none !important;
+}
 
-    .nav-menu{
-      margin: auto;
-      font-family: 'Mali', sans-serif;
-      z-index: 1; 
-      background-color: #25282c;
-      width: 240px;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      top: 0;
-      left: -100%;
-      transition: 850ms;
-      position: fixed;
-    }
+.nav-text a:hover svg {
+  transform: rotate(10deg) scale(1.2);
+}
 
-    .nav-menu.active {
-      left: 0;
-      transition: 350ms;
-    }
+/* LÍNEA DE BRILLO INFERIOR SUAVE Y GRUESA */
+.nav-text a::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  /* Grosor aumentado para que sea el suave/grueso */
+  background: #d7bde2;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  transform: translateX(-50%);
+  opacity: 0;
+}
 
-    .nav-text {
-      display: flex;
-      /* justify-content: flex-start; */
-      align-items: center;
-      padding: 8px 0px 8px 16px;
-      list-style: none;
-      height: 60px;
-    }
+.nav-text a:hover::after {
+  width: 60%;
+  opacity: 0.8;
+}
 
-    .nav-text a {
-      text-decoration: none;
-      color: #f5f5f5;
-      font-size: 1.6rem;
-      width: 95%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 0 16px;
-      border-radius: 4px;
-    }
+/* SIDEBAR TOGGLE OCULTO EN PC */
+.navbar-toggle {
+  display: none;
+}
 
-    .nav-text a:hover {
-      text-decoration: none;
-    }
-
-    .nav-menu-items {
-      width: 100%;
-    }
-    
-    .navbar-toggle {
-      background-color: #25282c;
-      width: 100%;
-      height: 100px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    span {
-      margin-left: 18px;
-    }
+/* ========== MÓVIL (< 768px) ========== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 2rem;
+    height: 80px;
   }
+
+  .menu-bars {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #121212;
+    /* Coincide con el nuevo oscuro moderno */
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 2000;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu-items {
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border: none;
+    /* Eliminamos la línea divisoria */
+  }
+
+  .nav-text {
+    width: 100%;
+  }
+
+  .nav-text a {
+    width: 100%;
+    border-radius: 12px;
+    padding: 1.2rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-text a:hover {
+    transform: translateX(10px);
+    /* Efecto lateral en lugar de subir */
+    background: rgba(215, 189, 226, 0.15);
+  }
+}
